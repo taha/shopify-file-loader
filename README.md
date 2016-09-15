@@ -36,7 +36,9 @@ Emits `bg.png` as `assets/bg-0dcbbaa701328a3c262cfd45869e351f.png` in the output
 }
 ```
 
-### Filter parameters
+Now the CSS file (with `.css.liquid` extension) will include the correct assets URLs.
+
+## Filter parameters
 
 The `asset_url` URL filter is used by default. Other filters can be used as such:
 
