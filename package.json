@@ -1,0 +1,32 @@
+{
+  "name": "shopify-file-loader",
+  "version": "0.0.5",
+  "author": "Taha Eldeib @tahaeldeib",
+  "description": "file loader module for webpack",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "loader-utils": "~0.2.5"
+  },
+  "devDependencies": {
+    "should": "~4.0.4",
+    "mocha": "~1.21.3"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taha/shopify-file-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taha/shopify-file-loader/issues"
+  },
+  "homepage": "https://github.com/taha/shopify-file-loader",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT"
+}
