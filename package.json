@@ -1,6 +1,6 @@
 {
   "name": "shopify-file-loader",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Taha Eldeib @tahaeldeib",
   "description": "file loader module for webpack",
   "files": [
