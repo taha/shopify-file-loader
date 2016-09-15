@@ -43,9 +43,9 @@ The `asset_url` URL filter is used by default. Other filters can be used as such
 ```css
 #foo {
     background-image: url(src/assets/images/bg.png?asset_img_url=300x);
-    // emits -> url({{'bg-3a6f8fc07427621158d3d78d92e20f23.png' | asset_img_url: '300x'}})
+    /* emits -> url({{'bg-3a6f8fc07427621158d3d78d92e20f23.png' | asset_img_url: '300x'}}) */
 
     background-image: url(src/assets/images/bg.png?asset_img_url=300x&crop=bottom);
-    // emits -> url({{'bg-3a6f8fc07427621158d3d78d92e20f23.png' | asset_img_url: '300x', crop: 'bottom'}})
+    /* emits -> url({{'bg-3a6f8fc07427621158d3d78d92e20f23.png' | asset_img_url: '300x', crop: 'bottom'}}) */
 }
 ```
