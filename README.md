@@ -2,8 +2,6 @@
 
 Based on webpack's [file-loader](https://github.com/webpack/file-loader) to support Shopify's liquid [URL filters](https://help.shopify.com/themes/liquid/filters/url-filters).
 
-## Example
-
 ## Usage
 
 The loader follows the same configuration as the original `file-loader`, meaning that all options from the original loader are supported such as the [filename templates](https://github.com/webpack/file-loader#filename-templates).
