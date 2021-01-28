@@ -10,27 +10,13 @@ module.exports = function(content) {
   this.cacheable && this.cacheable();
   if(!this.emitFile) throw new Error("emitFile is required from module system");
 
-  var query = loaderUtils.parseQuery(this.query);
-  var configKey = query.config || "fileLoader";
-  var options = this.options[configKey] || {};
-
-  var config = {
+  const config = Object.assign({
     publicPath: false,
     name: "[hash].[ext]"
-  };
-
-  // options takes precedence over config
-  Object.keys(options).forEach(function(attr) {
-    config[attr] = options[attr];
-  });
-
-  // query takes precedence over config and options
-  Object.keys(query).forEach(function(attr) {
-    config[attr] = query[attr];
-  });
+  }, loaderUtils.getOptions(this));
 
   var url = loaderUtils.interpolateName(this, config.name, {
-    context: config.context || this.options.context,
+    context: config.context,
     content: content,
     regExp: config.regExp
   });
@@ -46,7 +32,7 @@ module.exports = function(content) {
     );
   }
 
-  if (query.emitFile === undefined || query.emitFile) {
+  if (config.emitFile === undefined || config.emitFile) {
     this.emitFile(url, content);
   }
 
